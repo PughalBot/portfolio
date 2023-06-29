@@ -68,7 +68,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Pughalesh Lakshmanan"
+        title="Developer"
         description="Portfolio of Pughalesh — a Full Stack Developer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
@@ -83,10 +83,10 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="MadrasDa Website"
+        description="A Website to sell official merch of certain production house and Print On Demand design Ecommerce site."
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://madrasda.com/"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -104,10 +104,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Aero Encrypt"
+        description="An fusion offline password manager using a hybrid algorithm which is a combination of AES and RSA algorithms which can sync between devices using SSH."
+        buttonText="View Project"
+        buttonLink="https://github.com/PughalBot"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -128,10 +128,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="TIEMA Internship Tracker"
+        description="A Website to track ongoing progress of Internship done by college students using ReactJS."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="https://github.com/PughalBot"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',

@@ -15,6 +15,9 @@ import Pause from './svg/pause.svg';
 import Play from './svg/play.svg';
 import Send from './svg/send.svg';
 import Twitter from './svg/twitter.svg';
+import Linkedin from './svg/linkedin.svg';
+import Whatsapp from './svg/whatsapp.svg';
+import Discord from './svg/discord.svg';
 
 export const icons = {
   arrowLeft: ArrowLeft,
@@ -32,6 +35,9 @@ export const icons = {
   play: Play,
   send: Send,
   twitter: Twitter,
+  linkedin: Linkedin,
+  whatsapp: Whatsapp,
+  discord: Discord,
 };
 
 export const Icon = ({ icon, className, ...rest }) => {
