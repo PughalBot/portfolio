@@ -51,9 +51,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:storybook": "build-storybook -o build-storybook && node scripts/draco-storybook",
-    "deploy": "aws s3 sync --delete build/ s3://hamish-portfolio-site",
-    "deploy:storybook": "aws s3 sync --delete build-storybook s3://hamish-portfolio-storybook",
     "deploy:functions": "cd functions && npm run deploy",
     "test": "echo 'write some tests'",
     "storybook": "start-storybook -p 9009 -h localhost"
