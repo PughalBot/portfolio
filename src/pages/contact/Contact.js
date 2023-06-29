@@ -14,7 +14,6 @@ import { useFormInput } from 'hooks';
 import { useRef, useState } from 'react';
 import { cssProps, msToNum, numToMs } from 'utils/style';
 import styles from './Contact.module.css';
-// import nodemailer from 'nodemailer';
 
 export const Contact = () => {
   const errorRef = useRef();
@@ -34,36 +33,33 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      // Create a Nodemailer transporter
-      // const transporter = nodemailer.createTransport({
-      //   // Specify your email service provider's SMTP settings
-      //   host: 'smtp.gmail.com',
-      //   port: 587,
-      //   secure: false,
-      //   auth: {
-      //     user: 'bujjiksofficial@gmail.com',
-      //     pass: 'kickass@!23',
-      //   },
-      // });
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email.value,
+          message: message.value,
+        }),
+      });
 
-      // // Compose the email message
-      // const mailOptions = {
-      //   from: 'bujjiksofficial@gmail.com',
-      //   to: 'pughal147@gmail.com',
-      //   subject: 'New Message',
-      //   text: `${email.value}\n\n${message.value}`,
-      // };
+      const responseMessage = await response.json();
 
-      // // Send the email
-      // const info = await transporter.sendMail(mailOptions);
+      const statusError = getStatusError({
+        status: response?.status,
+        errorMessage: responseMessage?.error,
+        fallback: 'There was a problem sending your message',
+      });
 
-      console.log('Message sent:', info.messageId);
+      if (statusError) throw new Error(statusError);
 
       setComplete(true);
       setSending(false);
     } catch (error) {
       setSending(false);
-      setStatusError('There was a problem sending your message');
+      setStatusError(error.message);
     }
   };
 
@@ -71,7 +67,7 @@ export const Contact = () => {
     <Section className={styles.contact}>
       <Meta
         title="Contact"
-        description="Send me a message if you're interested in discussing a project or if you just want to say hi"
+        description="Send me a message if you’re interested in discussing a project or if you just want to say hi"
       />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
@@ -164,7 +160,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I'll get back to you within a couple days, sit tight
+              I’ll get back to you within a couple days, sit tight
             </Text>
             <Button
               secondary

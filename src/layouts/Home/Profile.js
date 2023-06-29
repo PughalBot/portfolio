@@ -21,7 +21,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there," start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Pughal, currently I live in Chennai and im a Web developer and Full Stack
+      I’m Pughal, currently I live in Chennai and I’m a Web developer and Full Stack
       developer. You can Find my profile on{' '}
       <Link href="https://www.linkedin.com/in/pughal/">Linkedin</Link>. My projects
       include Web Development, E-commerce Site devlopment, and very special at Front End
@@ -29,8 +29,8 @@ const ProfileText = ({ visible, titleId }) => (
       experiences.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      If you're intrested in looking my project here is the link to my{' '}
-      <Link href="https://github.com/PughalBot">GitHub</Link>. I'm always down for hearing
+      If you’re intrested in looking my project here is the link to my{' '}
+      <Link href="https://github.com/PughalBot">GitHub</Link>. I’m always down for hearing
       about new projects, so feel free to drop me a line.
     </Text>
   </Fragment>
