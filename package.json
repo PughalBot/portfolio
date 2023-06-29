@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
-  "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams <hello@hamishw.com>",
+  "homepage": "https://pughal.in",
+  "description": "Portfolio site for Pughalesh L",
+  "repository": "https://github.com/PughalBot/portfolio.git",
+  "author": "Pughalesh L <hello@pughal.in>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",
@@ -48,12 +48,13 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o build/",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "build:storybook": "build-storybook -o build-storybook && node scripts/draco-storybook",
     "deploy": "aws s3 sync --delete build/ s3://hamish-portfolio-site",
     "deploy:storybook": "aws s3 sync --delete build-storybook s3://hamish-portfolio-storybook",
     "deploy:functions": "cd functions && npm run deploy",
-    "start": "next start",
     "test": "echo 'write some tests'",
     "storybook": "start-storybook -p 9009 -h localhost"
   },
