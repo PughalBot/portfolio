@@ -61,14 +61,14 @@ export const Uses = () => {
                     learning curve but you can do some really powerful stuff with it.
                   </ListItem>
                   <ListItem>
-                    For CSS I've used a myriad pre-processors and css-in-js solutions like
-                    styled-components, but these days I'm using vanilla CSS with{' '}
+                    For CSS I’ve used a myriad pre-processors and css-in-js solutions like
+                    styled-components, but these days I’m using vanilla CSS with{' '}
                     <Link href="https://postcss.org/">PostCSS</Link> to get upcoming CSS
                     features today.
                   </ListItem>
                   <ListItem>
                     For Javascript animations I use{' '}
-                    <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it's
+                    <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
                     a great way to add spring animations to React and three.js.
                   </ListItem>
                   <ListItem>
