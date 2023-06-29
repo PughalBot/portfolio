@@ -21,7 +21,7 @@ const mailTransport = nodemailer.createTransport({
   },
 });
 
-const ORIGIN = 'https://pughal.vercel.app';
+const ORIGIN = 'https://pughal.in';
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
 
@@ -56,8 +56,8 @@ app.post('/message', async (req, res) => {
 
     // Send email
     const mailOptions = {
-      from: `Portfolio <mailbot@hamishw.com>`,
-      to: 'hello@hamishw.com',
+      from: `Portfolio <mailbot@pughal.in>`,
+      to: 'hello@pughal.in',
       subject: `New message from ${email}`,
       text: `From: ${email}\n\n${message}`,
     };
