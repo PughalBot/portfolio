@@ -10,9 +10,9 @@ export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => 
     <svg
       aria-hidden
       className={classes(styles.monogram, className)}
-      width="69"
-      height="99"
-      viewBox="0 0 26 29"
+      width="45"
+      height=""
+      viewBox="0 0 26 24"
       ref={ref}
       {...props}
     >
