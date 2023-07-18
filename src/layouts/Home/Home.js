@@ -4,6 +4,10 @@ import gamestackTexture2 from 'assets/gamestack-list.jpg';
 import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from 'assets/gamestack-login.jpg';
+import sairamBusTexture from 'assets/sairambuss-login.jpg';
+import sairamBusTextureLarge from 'assets/sairambuss-login-large.jpg';
+import sairamBusTexture2 from 'assets/sairambuss-list.jpg';
+import sairamBusTexture2Large from 'assets/sairambuss-list-large.jpg';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
@@ -27,10 +31,11 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -89,7 +94,7 @@ export const Home = () => {
         buttonLink="https://madrasda.com/"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Home Screen of madrasda website',
           textures: [
             {
               srcSet: [sprTexture, sprTextureLarge],
@@ -134,11 +139,36 @@ export const Home = () => {
         buttonLink="https://github.com/PughalBot"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Login of the TIEMA internship tracker',
           textures: [
             {
               srcSet: [sliceTexture, sliceTextureLarge],
               placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="Transport Automation App"
+        description="An App and web app based Transport automation to monitor college bus and attendance of students using Flutterflow."
+        buttonText="View Project"
+        buttonLink="https://github.com/PughalBot/bus_app"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [sairamBusTexture, sairamBusTextureLarge],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [sairamBusTexture2, sairamBusTexture2Large],
+              placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
