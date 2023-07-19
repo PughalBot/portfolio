@@ -91,7 +91,7 @@ export const Home = () => {
         title="MadrasDa Website"
         description="A Website to sell official merch of certain production house and Print On Demand design Ecommerce site."
         buttonText="View project"
-        buttonLink="https://madrasda.com/"
+        buttonLink="https://github.com/PughalBot/madrasda"
         model={{
           type: 'laptop',
           alt: 'Home Screen of madrasda website',
