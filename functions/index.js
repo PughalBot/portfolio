@@ -56,8 +56,8 @@ app.post('/message', async (req, res) => {
 
     // Send email
     const mailOptions = {
-      from: `Portfolio <mailbot@pughal.in>`,
-      to: 'hello@pughal.in',
+      from: `Portfolio <bujjiksofficial@gmail.com>`,
+      to: 'pughal147@gmail.com',
       subject: `New message from ${email}`,
       text: `From: ${email}\n\n${message}`,
     };
