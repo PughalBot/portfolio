@@ -14,6 +14,8 @@ import sliceTexture from 'assets/slice-app.jpg';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+import synTexture from 'assets/synhome.jpg';
+import synTextureLarge from 'assets/synhome-large.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -169,6 +171,26 @@ export const Home = () => {
             {
               srcSet: [sairamBusTexture2, sairamBusTexture2Large],
               placeholder: gamestackTexture2Placeholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-5"
+        sectionRef={projectOne}
+        visible={visibleSections.includes(projectOne.current)}
+        index={5}
+        title="Synsara22 Website"
+        description="A Website to make people register for the events conducted by CSE department of Sri Sairam Engineering College."
+        buttonText="View project"
+        buttonLink="https://github.com/PughalBot/synsara2022"
+        model={{
+          type: 'laptop',
+          alt: 'Home Screen of Synsara website',
+          textures: [
+            {
+              srcSet: [synTexture, synTextureLarge],
+              placeholder: sprTexturePlaceholder,
             },
           ],
         }}
