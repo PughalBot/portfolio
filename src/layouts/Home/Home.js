@@ -114,7 +114,7 @@ export const Home = () => {
         title="Aero Encrypt"
         description="An fusion offline password manager using a hybrid algorithm which is a combination of AES and RSA algorithms which can sync between devices using SSH."
         buttonText="View Project"
-        buttonLink="https://github.com/PughalBot"
+        buttonLink="https://github.com/PughalBot/AeroEncrypt"
         model={{
           type: 'phone',
           alt: 'App login screen',
