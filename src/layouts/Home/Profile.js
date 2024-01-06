@@ -85,7 +85,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in a Photo"
+                  alt="Pughalesh Lakshmanan standing in a Photo Leaning on a porsche cayman car in the streets of malaysia"
                 />
                 <svg
                   aria-hidden="true"
