@@ -17,23 +17,25 @@ import styles from './Profile.module.css';
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
-    <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there," start={visible} delay={500} />
-    </Heading>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Pughal, currently I live in Chennai and I’m a Web developer and Full Stack
-      developer. You can Find my profile on{' '}
-      <Link href="https://www.linkedin.com/in/pughal/">Linkedin</Link>. My projects
-      include Web Development, E-commerce Site devlopment, and very special at Front End
-      Development. Being comfortable with code allows me to rapidly prototype and validate
-      experiences.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      If you’re intrested in looking my project here is the link to my{' '}
-      <Link href="https://github.com/PughalBot">GitHub</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
-    </Text>
-  </Fragment>
+  <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
+    <DecoderText text="Hi there," start={visible} delay={500} />
+  </Heading>
+  <Text className={styles.description} data-visible={visible} size="l" as="p">
+    I'm Pughal, a Full-Stack Developer from Chennai with experience in building 
+    scalable web applications using <strong>React, Angular, Node.js, Express, 
+    MongoDB, MySQL,</strong> and <strong>AWS</strong>. I enjoy creating 
+    responsive user interfaces, optimizing backend systems, and deploying 
+    applications to the cloud. You can find my professional profile on{' '}
+    <Link href="https://www.linkedin.com/in/pughal/">LinkedIn</Link>.
+  </Text>
+  <Text className={styles.description} data-visible={visible} size="l" as="p">
+    My projects span <strong>e-commerce platforms, real-time applications, and 
+    portfolio websites</strong>, with a strong focus on frontend excellence and 
+    full-stack integration. Explore my work on{' '}
+    <Link href="https://github.com/PughalBot">GitHub</Link>, and feel free to 
+    reach out if you'd like to collaborate on exciting projects or innovative ideas.
+  </Text>
+</Fragment>
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {

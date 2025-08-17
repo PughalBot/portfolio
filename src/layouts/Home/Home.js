@@ -24,7 +24,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Programmer', 'Gamer', 'Designer'];
+const disciplines = ['UI Designer', 'FPS Gamer', 'Creator'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -75,7 +75,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Developer"
+        title="Full Stack Developer"
         description="Portfolio of Pughalesh — a Full Stack Developer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
