@@ -33,7 +33,7 @@ const ProfileText = ({ visible, titleId }) => (
     portfolio websites</strong>, with a strong focus on frontend excellence and 
     full-stack integration. Explore my work on{' '}
     <Link href="https://github.com/PughalBot">GitHub</Link>, and feel free to 
-    reach out if you'd like to collaborate on exciting projects or innovative ideas.
+    reach out if you’d like to collaborate on exciting projects or innovative ideas.
   </Text>
 </Fragment>
 );
