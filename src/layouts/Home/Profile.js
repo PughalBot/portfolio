@@ -21,7 +21,7 @@ const ProfileText = ({ visible, titleId }) => (
     <DecoderText text="Hi there," start={visible} delay={500} />
   </Heading>
   <Text className={styles.description} data-visible={visible} size="l" as="p">
-    I'm Pughal, a Full-Stack Developer from Chennai with experience in building 
+    I’m Pughal, a Full-Stack Developer from Chennai with experience in building 
     scalable web applications using <strong>React, Angular, Node.js, Express, 
     MongoDB, MySQL,</strong> and <strong>AWS</strong>. I enjoy creating 
     responsive user interfaces, optimizing backend systems, and deploying 
@@ -33,7 +33,7 @@ const ProfileText = ({ visible, titleId }) => (
     portfolio websites</strong>, with a strong focus on frontend excellence and 
     full-stack integration. Explore my work on{' '}
     <Link href="https://github.com/PughalBot">GitHub</Link>, and feel free to 
-    reach out if you'd like to collaborate on exciting projects or innovative ideas.
+    reach out if you’d like to collaborate on exciting projects or innovative ideas.
   </Text>
 </Fragment>
 );
