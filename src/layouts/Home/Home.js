@@ -11,6 +11,12 @@ import sairamBusTexture2Large from 'assets/sairambuss-list-large.jpg';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
+import priorlyTextureLarge from 'assets/priorly-app-large.jpg';
+import priorlyTexturePlaceholder from 'assets/priorly-app-placeholder.jpg';
+import priorlyTexture from 'assets/priorly-app.jpg';
+import somTextureLarge from 'assets/som-app-large.jpg';
+import somTexturePlaceholder from 'assets/som-app-placeholder.jpg';
+import somTexture from 'assets/som-app.jpg';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
@@ -24,7 +30,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['UI Designer', 'FPS Gamer', 'Creator'];
+const disciplines = ['Frontend', 'Backend', 'Fullstack'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -34,10 +40,13 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const projectFour = useRef();
+  const projectFive = useRef();
+  const projectSix = useRef();
+  const projectSeven = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, projectSeven, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -90,6 +99,47 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
+        title="Priorly AI - Enterprise Project Management Platform"
+        description="A platform for managing projects, tasks, and teams with AI-powered insights and automation."
+        buttonText="View project"
+        buttonLink="https://app-priorly.vercel.app"
+        model={{
+          type: 'laptop',
+          alt: 'Login of the priorly AI website',
+          textures: [
+            {
+              srcSet: [priorlyTexture, priorlyTextureLarge],
+              placeholder: priorlyTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-2"
+        alternate
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={2}
+        title="SOM Connect"
+        description="A company website for SOM Connect Digital marketing agency"
+        buttonText="View project"
+        buttonLink="https://somconnect.in"
+        model={{
+          type: 'laptop',
+          alt: 'Homescreen of SOM Connect website',
+          textures: [
+            {
+              srcSet: [somTexture, somTextureLarge],
+              placeholder: somTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={3}
         title="MadrasDa Website"
         description="A Website to sell official merch of certain production house and Print On Demand design Ecommerce site."
         buttonText="View project"
@@ -106,11 +156,11 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-2"
+        id="project-4"
         alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
         title="Aero Encrypt"
         description="An fusion offline password manager using a hybrid algorithm which is a combination of AES and RSA algorithms which can sync between devices using SSH."
         buttonText="View Project"
@@ -131,10 +181,10 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
+        id="project-5"
+        sectionRef={projectFive}
+        visible={visibleSections.includes(projectFive.current)}
+        index={5}
         title="TIEMA Internship Tracker"
         description="A Website to track ongoing progress of Internship done by college students using ReactJS."
         buttonText="View project"
@@ -151,11 +201,11 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-4"
+        id="project-6"
         alternate
-        sectionRef={projectFour}
-        visible={visibleSections.includes(projectFour.current)}
-        index={4}
+        sectionRef={projectSix}
+        visible={visibleSections.includes(projectSix.current)}
+        index={6}
         title="Transport Automation App"
         description="An App and web app based Transport automation to monitor college bus and attendance of students using Flutterflow."
         buttonText="View Project"
@@ -176,10 +226,10 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-5"
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
-        index={5}
+        id="project-7"
+        sectionRef={projectSeven}
+        visible={visibleSections.includes(projectSeven.current)}
+        index={7}
         title="Synsara22 Website"
         description="A Website to make people register for the events conducted by CSE department of Sri Sairam Engineering College."
         buttonText="View project"

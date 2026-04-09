@@ -98,6 +98,10 @@
     top: 6%;
     left: 14%;
 
+    @nest .summary[data-alternate='true'] .preview & {
+      left: -14%;
+    }
+
     @media (--mediaDesktop) {
       --width: 180%;
     }
@@ -107,6 +111,10 @@
 
       top: 10%;
       left: 0;
+
+      @nest .summary[data-alternate='true'] .preview & {
+        left: 0;
+      }
     }
   }
 
@@ -139,6 +147,7 @@
   }
 }
 
+
 .svg {
   opacity: 0;
   transition: opacity 1200ms ease 1400ms;
@@ -155,14 +164,29 @@
     bottom: 24%;
     transform: translateY(50%);
 
+    @nest .summary[data-alternate='true'] .preview & {
+      right: auto;
+      left: -36%;
+    }
+
     @media (--mediaTablet) {
       width: 80%;
       right: -10%;
       bottom: 18%;
+
+      @nest .summary[data-alternate='true'] .preview & {
+        right: auto;
+        left: -10%;
+      }
     }
 
     @media (--mediaMobile) {
       right: 0;
+
+      @nest .summary[data-alternate='true'] .preview & {
+        right: auto;
+        left: 0;
+      }
     }
   }
 

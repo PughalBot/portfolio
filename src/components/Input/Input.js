@@ -18,6 +18,7 @@ export const Input = ({
   autoComplete,
   required,
   maxLength,
+  name,
   type,
   onChange,
   ...rest
@@ -67,6 +68,7 @@ export const Input = ({
           autoComplete={autoComplete}
           required={required}
           maxLength={maxLength}
+          name={name}
           type={type}
         />
         <div className={styles.underline} data-focused={focused} />
