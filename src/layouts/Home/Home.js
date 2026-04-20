@@ -102,7 +102,7 @@ export const Home = () => {
         title="Priorly AI - Enterprise Project Management Platform"
         description="A platform for managing projects, tasks, and teams with AI-powered insights and automation."
         buttonText="View project"
-        buttonLink="https://app-priorly.vercel.app"
+        buttonLink="https://priorly.pughal.in"
         model={{
           type: 'laptop',
           alt: 'Login of the priorly AI website',
@@ -123,7 +123,7 @@ export const Home = () => {
         title="SOM Connect"
         description="A company website for SOM Connect Digital marketing agency"
         buttonText="View project"
-        buttonLink="https://somconnect.in"
+        buttonLink="https://som.pughal.in"
         model={{
           type: 'laptop',
           alt: 'Homescreen of SOM Connect website',
@@ -233,7 +233,7 @@ export const Home = () => {
         title="Synsara22 Website"
         description="A Website to make people register for the events conducted by CSE department of Sri Sairam Engineering College."
         buttonText="View project"
-        buttonLink="https://github.com/PughalBot/synsara2022"
+        buttonLink="https://synsara23.pughal.in"
         model={{
           type: 'laptop',
           alt: 'Home Screen of Synsara website',
